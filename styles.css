@@ -1,0 +1,78 @@
+/** tag selector **/
+header {
+  text-align: right;
+  position: fixed;
+  overflow: visible;
+  background-color:inherit;
+  margin: 0;
+  z-index: 1;
+  width: 90%;
+  height: 5%;
+  padding: 3;
+  opacity: 1;
+}
+
+body {
+  background-color: #CEE5D0;
+  font-style: normal;
+  font-family: sans-serif;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  background-image: image(D:\Web Application\html - personal site\filename.jpg);
+}
+
+table {
+  font-size: 20px;
+  margin-left: 20px;
+  text-align: center;
+  position: relative;
+}
+
+h2 {
+  margin-left: 30px;
+}
+
+hr {
+  border-style: dotted;
+  border-bottom: none;
+  border-width: thick;
+  width: 2%;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  background-color: #678983;
+  position: fixed;
+  bottom: 0;
+}
+
+/** class selector**/
+.bottomend {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.topend {
+  text-decoration: none;
+  padding: 50px;
+  font-size: 25px;
+  color: black;
+
+}
+
+.name {
+  font-size: 50px;
+  position: relative;
+  font-family: "Georgia", serif;
+  margin: 15% 5% 5%;
+  font-weight: 500;
+  line-height: 35px;
+}
+.topend:hover{
+  text-decoration: underline;
+   color: blue;
+
+}
