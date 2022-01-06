@@ -1,0 +1,23 @@
+body{
+  background-image:url("images.jpg")
+}
+
+
+
+
+/** class **/
+.main{
+  position: relative;
+  width: 600px;
+  height:700px;
+  border-radius: 10px;
+  background-size: cover;
+  margin-left: 300px;
+  color:white;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+  text-align: center;
+  padding: 10px;
+}
+.main::first-line{
+  background-color: black;
+}
