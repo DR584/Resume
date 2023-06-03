@@ -10,3 +10,4 @@
   let s = addZero(d.getSeconds());
   let time = h + ":" + m + ":" +s;
   document.getElementById("demo").innerHTML = time;
+ setTimeout ( Timedisplay(),1000);

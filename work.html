@@ -1,19 +1,114 @@
-<h2> Work Experience</h2>
-<table style="width:50%">
-  <tr>
-    <td>
-      2020-till date
-    </td>
-    <td>
-      Consultant for HVAC and BMS System
-    </td>
-  </tr>
-  <tr>
-    <td>
-      2017-2020
-    </td>
-    <td>
-      Estimation and costing Engineer
-    </td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css\work.css">
+  <link rel="stylesheet" href="css\styles.css" >
+</head>
+
+<body>
+
+  <div class=navigation_top>
+
+  <div class="mainheader">
+      <!--<div id="newdemo" class="clock" ></div>
+    <script src="javascript\clock2.js">
+
+    </script> !-->
+
+      <a class="linktag" href="index.html">About</a>
+      <a class="linktag" href="contact info.html">Contact</a>
+      <a class="linktag" href="hobbies.html">Interest</a>
+      <a  class="linktag" href="work.html">Work</a>
+    </div>
+  </div>
+
+  <div class="headtitle">
+
+  <h1 > Work Experience</h1> </div>
+  <br >
+  <br >
+  <div class="slider">
+
+    <div class="slider_wrapper">
+
+      <input type="checkbox" checked>
+
+      <div class="slider_panel1 slider_left">
+      </div>
+      <div class=wrkexp>
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+          <button class="tablinks" onclick="openCity(event, 'Beng')">Beng</button>
+          <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        </div>
+        <div id="London" class="tabcontent">
+          <h3> the very london</h3>
+        </div>
+        <div id="Beng" class="tabcontent">
+          <h3> the very nature</h3>
+        </div>
+        <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          document.getElementById("defaultOpen").click();
+        </script>
+       </div>
+
+        <div class="slider_panel2 slider_right"> </div>
+
+
+  </div>
+  <!--slider wrapper-->
+
+  </div> <!-- slider-->
+  <br>
+  <br>
+  <br>
+  <div class="slider">
+
+    <div class="slider_wrapper">
+
+      <input type="checkbox" checked>
+
+      <div class="slider_panel1 slider_left">
+      </div>
+      <div class=wrkexp>
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'car')" id="defaultOpen">car</button>
+          <button class="tablinks" onclick="openCity(event, 'dar')">dar</button>
+          <button class="tablinks" onclick="openCity(event, 'mar')">mar</button>
+        </div>
+        <div id="car" class="tabcontent">
+          <h3> the very london</h3>
+        </div>
+        <div id="dar" class="tabcontent">
+          <h3> the very nature</h3>
+        </div>
+
+       </div>
+      <div class="slider_panel2 slider_right"> </div>
+
+
+     </div><!--slider wrapper-->
+
+    </div> <!-- slider-->
+
+
+
+</body>
+
+</html>

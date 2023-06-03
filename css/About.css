@@ -1,5 +1,5 @@
 body{
-  background-image:url("images.jpg")
+  background-image:linear-gradient(#F4F9F9);
 }
 
 
@@ -17,7 +17,8 @@ body{
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
   text-align: center;
   padding: 10px;
+  background-color: White;
 }
 .main::first-line{
-  background-color: black;
+  background-color:  ;
 }
