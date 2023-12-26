@@ -1,36 +1,76 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title> Deepak Profile</title>
-  <link rel="stylesheet" href="css\styles.css">
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Optional: Add any meta tags, external fonts, etc. -->
 </head>
-
 <body>
-<div class=navigation_top>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#landing">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Add more navigation links with corresponding IDs -->
+            </ul>
+        </nav>
+    </header>
 
-<div class="mainheader">
-    <!--<div id="newdemo" class="clock" ></div>
-  <script src="javascript\clock2.js">
+    <main>
+      <section id="landing" class="landing">
+        <div class="landing-content">
+            <div class="image-block">
+                <!-- Image Block -->
+                <label for="photo" id="uploadArea" class="upload-area">
+                    <div class="upload-placeholder">
+                        <p>Deepak </p>
+                        <span class="drag-icon" onclick="editImage()" style="display: none;">🖱️</span>
+                    </div>
+                    <input type="file" id="photo" name="photo" accept="image/*" onchange="previewImage(event)">
+                </label>
+                <img src="#" alt="Uploaded Image" class="landing-image" id="uploadedImage">
+                <button id="editButton" onclick="editImage()" style="display: none;">Edit</button>
+            </div>
+            <div class="message-block">
+                <!-- Editable Message Block -->
+                <h1>Hi, I am Deepak </h1>
+                <div  class="editable-message">
+                  Product development and Design thinker|Problem Seeker for Automation and Propulsion Systems | Space Technology Enthusiast | Business Analyst
+                </div>
+                <a href="#about" class="btn">Discover More</a>
+            </div>
+        </div>
+    </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>This is where you can introduce yourself.</p>
+        </section>
+        <section id="portfolio">
+          <h2>Updating........</h2>
+          <p></p>
+      </section>
 
-  </script> !-->
+        <section id="contact">
+            <h1 class="section-heading section-4-heading">Contact Me</h1>
+            <form class ="contact-form">
+            <input type = "text" placeholder="Name">
+            <input type = "email" placeholder="Email"> 
+            <textarea placeholder="Message">  </textarea>
+            <input type ="submit" value="Submit" class="contact-form-btn"> 
+            </form>
+        </section>
+        <!-- Add more sections for different content areas -->
+    </main>
 
-    <a class="linktag" href="index.html">name</a>
-    <a  class="linktag"href="contact info.html">Contact</a>
-    <a  class="linktag"href="hobbies.html">Interest</a>
-    <a  class="linktag"href="work.html">Work</a>
-  </div>
-</div>
-    <div class="name">
-      <h3> Hi, I'm</h3>
-      <h1> Deepak R </h1>
-    </div>
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
 
-    <hr />
-
-  </main>
-  <footer>
-
-
-  </footer>
-  </div>
+    <script src="javascript/script.js"></script>
+    <!-- Optional: Load additional scripts or libraries -->
 </body>
+</html>
+

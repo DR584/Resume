@@ -1,96 +1,166 @@
-/** tag selector **/
-.navigation_top {
-  position: relative;
-  width:100%;
-  z-index:1000;
-  transform:translate3d(0px,0px,0px);
-  background-color: #ffff;
-  opacity: 0.9;
-  height:100px;
-}
 
-.mainheader{
-  display: inline-block ;
-  padding-left:30px;
-  position: relative;
-  padding-top:30px;
-  left : 750px;
-  font-size: 30px;
-  padding-right: 20px;
-  margin-left: 20px;}
-
-.linktag{
-  padding-right:50px;
-text-decoration: none;
-color: black;
-}
-body {
-  background-image:repeating-linear-gradient(#A3E4DB,#FFF8F3);
-  padding-top: 0;
+/* styles.css */
+body, html {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
-table {
-  font-size: 20px;
-  margin-left: 20px;
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+
+
+/* Style the navigation */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 20px 150px;
+}
+
+/* Style the unordered list */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox */
+  justify-content: right; /* Align items in the center */
+}
+
+/* Style the list items */
+nav ul li {
+  margin: 0 30px;
+}
+
+/* Style the links */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Change link color on hover */
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+
+main {
+  padding-top: 50px; /* Adjust to accommodate the fixed header */
+}
+
+section {
+  height: 100vh; /* Make each section occupy the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
-  position: relative;
 }
 
-h2 {
-  margin-left: 30px;
+/* Define styles for different sections */
+#landing {
+  background-color: #f0f0f0;
 }
 
-hr {
-  border-style: dotted;
-  border-bottom: none;
-  border-width: thick;
-  width: 2%;
+#about {
+  background-color: #e0e0e0;
+}
+
+#contact {
+  background-color: #d0d0d0;
 }
 
 footer {
-  text-align: center;
+  background-color: #333;
+  color: white;
+  text-align: center; /* Align text content in the center */
+  padding: 10px 0;
+}
+
+/* styles.css */
+
+.landing-content {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: centre;
+  padding: 30px;
+}
+
+.image-block {
+  flex: 1;
+  margin-left: 50px;
+  margin-bottom: 100PX;
+}
+
+.message-block {
+flex :1 ;
+ margin-left: 60px;
+ margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 100px;
+  margin-top: 20px;
+}
+.landing-image {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.upload-area {
+  position: relative;
+  display: block;
+  opacity : 0;
+  transition:opacity 0.3s ease;
+}
+ 
+.upload-area:hover {
+
+  opacity: 1;
+}
+.upload-area input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
   width: 100%;
-  background-color: #678983;
-  position: fixed;
-  bottom: 0;
+  height: 100%;
+  cursor: pointer;
 }
 
-/** class selector**/
-.bottomend {
-  font-size: 50px;
+.editable-message {
   padding: 10px;
-}
-
-.topend{
-  display:inline-block;
-  float: left;
-  position: relative;
-
- }
-
-
-.name {
-  font-size: 50px;
-  position: relative;
-  font-family: "Georgia", serif;
-  margin: 15% 5% 5%;
-  font-weight: 500;
-  line-height: 35px;
-}
-.topend:hover{
-  text-decoration: underline;
-   color: blue;
+  min-height: 100px;
 
 }
-.clock{
-  position: inherit;
-  padding:10px;
-  font-size: 30px;
-  border-radius: 10px;
-  background-color: #ffff;
-  transform: translatex(20%)
-  translateY(20%);
-  border-style: ridge;
-  font-family: sans-serif;
-  border-color: black;
+
+.contact-form {
+  width: 30rem ;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 95%;
+  padding:.5rem;
+  margin:0.5rem
+}
+
+.contact-form textarea {
+ height: 10rem;
+ max-height: 15rem;
+ max-width: 95%;
+}
+
+.contact-form .contact-form-btn {
+  width: 20% ;
 }
