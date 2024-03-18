@@ -11,7 +11,7 @@
         <nav>
             <ul>
                 <li><a href="#landing">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#About">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <!-- Add more navigation links with corresponding IDs -->
@@ -23,54 +23,47 @@
       <section id="landing" class="landing">
         <div class="landing-content">
             <div class="image-block">
-                <!-- Image Block -->
-                <label for="photo" id="uploadArea" class="upload-area">
-                    <div class="upload-placeholder">
-                        <p>Deepak </p>
-                        <span class="drag-icon" onclick="editImage()" style="display: none;">🖱️</span>
-                    </div>
-                    <input type="file" id="photo" name="photo" accept="image/*" onchange="previewImage(event)">
-                </label>
-                <img src="#" alt="Uploaded Image" class="landing-image" id="uploadedImage">
-                <button id="editButton" onclick="editImage()" style="display: none;">Edit</button>
+                <img src="Landing Image -F.png" alt="Carimage">  
             </div>
             <div class="message-block">
                 <!-- Editable Message Block -->
                 <h1>Hi, I am Deepak </h1>
                 <div  class="editable-message">
-                  Product development and Design thinker|Problem Seeker for Automation and Propulsion Systems | Space Technology Enthusiast | Business Analyst
+                    Technical and Business Analyst | Automotive and Space Technology Enthusiast | Problem Seeker for Autonomous and New fuel Technology | Ideation and Concept developer
                 </div>
-                <a href="#about" class="btn">Discover More</a>
+                <a href="#About" class="btn">Discover More</a>
             </div>
         </div>
     </section>
-        <section id="about">
+        <section id="About">
             <h2>About Me</h2>
-            <p>This is where you can introduce yourself.</p>
+            <p>"Skilled Technical and Business Analyst with a strong emphasis on data-driven strategies. Proficient in design, manufacturing engineering, and project management, adept at optimizing processes and delivering successful outcomes. Passionate about driving innovation in the automotive and space technology sectors through continuous learning and collaboration."</p>
         </section>
         <section id="portfolio">
           <h2>Updating........</h2>
           <p></p>
       </section>
 
-        <section id="contact">
-            <h1 class="section-heading section-4-heading">Contact Me</h1>
-            <form class ="contact-form">
-            <input type = "text" placeholder="Name">
-            <input type = "email" placeholder="Email"> 
-            <textarea placeholder="Message">  </textarea>
-            <input type ="submit" value="Submit" class="contact-form-btn"> 
-            </form>
-        </section>
+      <section id="contact">
+        <h1 class="section-heading section-4-heading">Contact Me</h1>
+        <form action="send_email.php" method="post" class="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <input type="submit" value="Submit" class="contact-form-btn">
+        </form>
+    </section>
         <!-- Add more sections for different content areas -->
     </main>
 
-    <footer>
-        <p>&copy; 2023 My Website. All rights reserved.</p>
+    <footer>   
+        <p>&copy; <span id="currentYear"></span> My Website. All rights reserved.</p>
+        <script src="UpdateYear.js"></script>
     </footer>
 
     <script src="javascript/script.js"></script>
     <!-- Optional: Load additional scripts or libraries -->
 </body>
 </html>
+
 
